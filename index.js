@@ -2,16 +2,14 @@
 const names = ["Ada", "Brendan", "Ali"];
 
 function writeCards(names, event) {
-   let arr = []
    for (let i=0; i < names.length; i++) {
-      arr[i] = `Thank you, ${names[i]}, for the wonderful ${event} gift!`
+      names[i] = `Thank you, ${names[i]}, for the wonderful ${event} gift!`
    }
-   return arr
+   return names
 }
 
 function countDown(num) {
    while (num >= 0) {
-      console.log(num)
-      num--
+      console.log(num--)
    }
 }
